@@ -4,15 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx pm2 start index.js --name 'Bit'",
-    "stop": "npx pm2 stop index.js --name 'Bit'",
-    "dev": "npx pm2 start index.js --name 'Bit' --watch"
+    "start": "node .",
+    "dev": "npx pm2 start index.js --name 'Bit' --watch",
+    "deploy-commands": "node deploy-commands.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.6.0",
-    "pm2": "^5.2.2"
+    "fast-xml-parser": "^4.0.11",
+    "pm2": "^5.2.2",
+    "rss-parser": "^3.12.0"
   }
 }
